@@ -1,0 +1,34 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Demo Suite"  parallel="classes" thread-count="2">
+
+    <listeners>
+        <listener class-name="com.epam.cdp.listeners.TestListeners">
+        </listener>
+    </listeners>
+
+    <test name="Sub Calc Test">
+        <classes>
+            <class name="com.epam.cdp.tests.SubCalcTest"/>
+
+        </classes>
+    </test>
+    <test name="Sum Calc Test">
+        <classes>
+            <class name="com.epam.cdp.tests.SumCalcTest"/>
+
+        </classes>
+    </test>
+
+    <test name="Mult Calc Test">
+        <classes>
+            <class name="com.epam.cdp.tests.MultCalcTest"/>
+
+        </classes>
+    </test>
+    <test name="Div Calc Test">
+        <classes>
+            <class name="com.epam.cdp.tests.DivCalcTest"/>
+
+        </classes>
+    </test>
+</suite>
